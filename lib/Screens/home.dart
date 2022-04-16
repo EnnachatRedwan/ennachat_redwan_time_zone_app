@@ -70,6 +70,9 @@ class _HomeState extends State<Home> {
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
           RegioApi a = api;
+          if (a.regionsLength == 0) {
+            await a.fetchRegions();
+          }
           await Navigator.of(context)
               .pushNamed(SelectRegion.routeName, arguments: api)
               .then((value) => {

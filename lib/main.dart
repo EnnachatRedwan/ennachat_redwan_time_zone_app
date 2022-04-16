@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Ennachat Redwan Weather',
       initialRoute: LoadinScreen.routeName,
       debugShowCheckedModeBanner: false,
       routes: {
