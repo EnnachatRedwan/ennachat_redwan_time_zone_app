@@ -9,7 +9,6 @@ class LoadingData extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: Color.fromRGBO(0, 0, 0, .1),
       body: Center(
         child: SpinKitDualRing(
           color: Colors.blue,
